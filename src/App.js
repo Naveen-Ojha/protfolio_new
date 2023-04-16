@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./user/component/Header";
+// import Route from "./user/Route";
+import Footer from "./user/component/Footer";
+import About from "./user/pages/About";
+import Home from "./user/pages/Home";
+import Services from "./user/pages/Services";
+import Protfolio from "./user/pages/Protfolio";
+import Blog from "./user/pages/Blog";
+import Contact from "./user/pages/Contact";
+import Experience from "./user/pages/Experience";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="onepage background-light designer-home home-mazin home-four">
+      <Header />
+      {/* <Route /> */}
+      <Home />
+      <Experience />
+      <About />
+      <Services />
+      <Protfolio />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }
