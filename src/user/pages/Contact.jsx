@@ -3,8 +3,53 @@ import icon1 from "../assets/images/contact/icon/01.png";
 import icon2 from "../assets/images/contact/icon/02.png";
 import contactshape4 from "../assets/images/contact/shape/04.png";
 import bannershape8 from "../assets/images/banner/shape/08.png";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const [state, setstate] = React.useState(null);
+
+  const [contact, setContact] = React.useState({
+    name: "",
+    email: "",
+    number: "",
+    subject: "",
+    message: "",
+  });
+
+  const getValue = (event) => {
+    const { name, value } = event.target;
+    setContact((preValue) => {
+      return { ...preValue, [name]: value };
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const templateParams = {
+      name: contact.name,
+      email: contact.email,
+      number: contact.number,
+      subject: contact.subject,
+      message: contact.message,
+    };
+
+    emailjs
+      .send(
+        "service_cox1m7t",
+        "template_grp08sa",
+        templateParams,
+        "user_4N7iNzhIHVW4JRSaTRWRT"
+      )
+      .then(
+        (response) => {
+          setstate("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          setstate("FAILED...", err);
+        }
+      );
+  };
+
   return (
     <>
       <div
@@ -53,32 +98,33 @@ function Contact() {
             </div>
             <div className="col-lg-7">
               {/* form area start */}
-              <form className="contact-form-style-four" action="#">
+              <form className="contact-form-style-four" onSubmit={sendEmail}>
                 <div className="dedidation-2">
                   <div className="single">
                     <label htmlFor="name">Full Name*</label>
-                    <input type="text" id="name" required />
+                    <input onChange={getValue} type="text" name="name" id="name" required />
                   </div>
                   <div className="single">
                     <label htmlFor="Email">Your Email*</label>
-                    <input type="text" id="Email" required />
+                    <input onChange={getValue} type="text" name="email" id="Email" required />
                   </div>
                 </div>
                 <div className="dedidation-2">
                   <div className="single">
                     <label htmlFor="Phone-Number">Phone Number</label>
-                    <input type="text" id="Phone-Number" required />
+                    <input onChange={getValue} type="text" id="Phone-Number" required />
                   </div>
                   <div className="single">
                     <label htmlFor="Subject">Your Subject*</label>
-                    <input type="text" id="Subject" required />
+                    <input onChange={getValue} type="text" name="subject" id="Subject" required />
                   </div>
                 </div>
                 <label htmlFor="message">Type Your Message</label>
-                <textarea id="message" defaultValue={""} />
-                <a href="javascript:void(0);" className="rts-btn btn-main-2">
+                <textarea onChange={getValue} name="message" id="message" defaultValue={""} />
+                <div className="text-success text-sm h5">{state}</div>
+                <button type="submit" className="rts-btn btn-main-2">
                   Send Message
-                </a>
+                </button>
               </form>
               {/* form area end */}
             </div>
