@@ -21,20 +21,20 @@ function Blog() {
             <div className="col-lg-4 text-anim">
               {/* single post area start */}
               <div className="rts-post-area-h2 style-four">
-                <a href="blog-details.html" className="thumbnail">
+                <a href="#" className="thumbnail">
                   <img src={blog4} alt="rts-blog-image" />
                 </a>
                 <div className="content-area">
                   <div className="icon-area">
                     <i className="far fa-clock" />
-                    <span>March 10, 2023</span>
+                    <span>March 30, 2023</span>
                   </div>
-                  <a href="blog-details.html">
+                  <a href="#">
                     <h5 className="title">
                       Consider build support with your design clients
                     </h5>
                   </a>
-                  <a href="blog-details.html" className="rts-btn btn-main-2">
+                  <a href="#" className="rts-btn btn-main-2">
                     Read More
                   </a>
                 </div>
@@ -44,20 +44,20 @@ function Blog() {
             <div className="col-lg-4 text-anim">
               {/* single post area start */}
               <div className="rts-post-area-h2 style-four">
-                <a href="blog-details.html" className="thumbnail">
+                <a href="#" className="thumbnail">
                   <img src={blog5} alt="rts-blog-image" />
                 </a>
                 <div className="content-area">
                   <div className="icon-area">
                     <i className="far fa-clock" />
-                    <span>March 10, 2023</span>
+                    <span>March 30, 2023</span>
                   </div>
-                  <a href="blog-details.html">
+                  <a href="#">
                     <h5 className="title">
                       How to build support with your design clients
                     </h5>
                   </a>
-                  <a href="blog-details.html" className="rts-btn btn-main-2">
+                  <a href="#" className="rts-btn btn-main-2">
                     Read More
                   </a>
                 </div>
@@ -67,20 +67,20 @@ function Blog() {
             <div className="col-lg-4 text-anim">
               {/* single post area start */}
               <div className="rts-post-area-h2 style-four">
-                <a href="blog-details.html" className="thumbnail">
+                <a href="#" className="thumbnail">
                   <img src={blog6} alt="rts-blog-image" />
                 </a>
                 <div className="content-area">
                   <div className="icon-area">
                     <i className="far fa-clock" />
-                    <span>March 10, 2023</span>
+                    <span>March 30, 2023</span>
                   </div>
-                  <a href="blog-details.html">
+                  <a href="#">
                     <h5 className="title">
                       Best build support with your design clients
                     </h5>
                   </a>
-                  <a href="blog-details.html" className="rts-btn btn-main-2">
+                  <a href="#" className="rts-btn btn-main-2">
                     Read More
                   </a>
                 </div>

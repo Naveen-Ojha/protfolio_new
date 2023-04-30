@@ -1,5 +1,6 @@
 import React from "react";
-import bannerImg from "../assets/images/banner/04.png";
+// import bannerImg from "../assets/images/banner/04.png";
+import bannerImg from "../assets/images/profile_img/my_img.png";
 import { Link } from "react-router-dom";
 
 function Home() {

@@ -1,5 +1,6 @@
 import React from "react";
-import aboutImg from "../assets/images/about/04.png";
+// import aboutImg from "../assets/images/about/04.png";
+import aboutImg from "../assets/images/profile_img/about_img.png";
 import shape02 from "../assets/images/about/shape/02.png";
 
 function About() {
