@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/images/logo/naveen_02.png";
 import img1 from "../assets/images/footer/gallery/01.png";
 import img2 from "../assets/images/footer/gallery/02.png";
@@ -9,6 +9,12 @@ import img6 from "../assets/images/footer/gallery/06.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  useEffect(() => {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+    }, 1000);
+  }, []);
+
   return (
     <>
       <div className="rts-footer-area footer-bg-3 footer-three four">
