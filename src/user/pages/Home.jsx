@@ -122,9 +122,9 @@ function Home() {
       </div>
 
       <div className="rts-banner-style-four pb--80 pt--200 pt_sm--80" id="home">
-        <div className="banner-shape-4 text-anim">
+        {/* <div className="banner-shape-4 text-anim">
           <img src="assets/images/banner/shape/07.png" alt="banner-shape" />
-        </div>
+        </div> */}
         <div className="container">
           <div className="row">
             <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
