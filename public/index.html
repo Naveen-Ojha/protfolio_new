@@ -28,6 +28,35 @@
     />
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css" />
 
+    <!-- start webpushr tracking code -->
+    <script>
+      !(function (e) {
+        if (void 0 !== e.webpushr) return;
+        e.webpushr =
+          e.webpushr ||
+          function () {
+            (e.webpushr.q = e.webpushr.q || []).push(arguments);
+          };
+        let t = document.createElement("script");
+        t.setAttribute("src", "https://naveenojha.netlify.app/assest/js/webscript.js"),
+          t.setAttribute("async", ""),
+          t.setAttribute("id", "webpush"),
+          t.setAttribute("type", "module"),
+          (t.onload = function e() {
+            console.log("script has loaded");
+          }),
+          (t.onerror = function e() {
+            console.log("error loading script");
+          }),
+          document.head.appendChild(t);
+      })(window),
+        localStorage.setItem(
+          "webkey",
+          "B32XlZEkaHXmntHOdO_JTaVewxcXZCafIpvcMP24VsetKuqmKwQe5xu9Y-pllxkNlmYAJTsKqz7YPiokchVfG"
+        );
+    </script>
+    <!-- end webpushr tracking code -->
+
     <title>Naveen Ojha | Developer</title>
   </head>
   <body>
