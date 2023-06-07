@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logo/naveen.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -8,30 +9,32 @@ export default function Header() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-6">
-              <a href="index-two.html" className="thumbnail">
+              <Link to="/" className="thumbnail">
                 <img src={logo} alt="pixxi_logo" />
-              </a>
+              </Link>
             </div>
             <div className="col-xl-8 justify-content-center d-flex d-none d-xl-block">
               <nav className="main-nav">
                 <ul id="nav">
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="/#home">Home</a>
                   </li>
                   <li className="current">
-                    <a href="#about">About</a>
+                    <a href="/#about">About</a>
                   </li>
                   <li>
-                    <a href="#service">Service</a>
+                    <a href="/#service">Service</a>
                   </li>
                   <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="/#portfolio">Portfolio</a>
                   </li>
                   <li>
-                    <a href="#blog">Blog</a>
+                    <Link target="_blank" to="/blog">
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <a href="#gettouch">Contacts</a>
+                    <a href="/#gettouch">Contacts</a>
                   </li>
                 </ul>
               </nav>

@@ -1,0 +1,974 @@
+.heading_blog_seo .fa-chevron-down {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #f0df20;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  #trendingdesc {
+    display: none;
+  }
+  
+  .pvc_clear {
+    display: none;
+  }
+  
+  .pvc-stats-icon {
+    display: none;
+  }
+  
+  .footer-top .fade_class_up {
+    visibility: visible;
+    animation-name: fadeInUp;
+  }
+  
+  .footer-top .fade_class_down {
+    visibility: visible;
+    animation-name: fadeInDown;
+  }
+  
+  .copy-cntr {
+    background: #000;
+    padding: 15px 0;
+  }
+  
+  .copy-cntr p {
+    color: #fff;
+    margin: 0;
+    font-size: 13px;
+  }
+  
+  .footer-top {
+    padding: 20px 0 30px;
+    text-align: left;
+    background-color: #454545;
+  }
+  
+  .footer-top h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ddd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .footer-top h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0df20;
+    height: 2px;
+  }
+  
+  .heading_link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ddd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: auto;
+  }
+  
+  .heading_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94px;
+    background-color: #f0df20;
+    height: 2px;
+  }
+  
+  .footer-top .discript_link {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+    padding-bottom: 5px;
+    word-break: break-word;
+  }
+  
+  .text-link {
+    color: #f0df20 !important;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .footer-links h3 a {
+    padding: 0;
+    border: none;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+  }
+  
+  .footer-social i {
+    margin: 0 5px;
+    color: #eee;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .footer-social i:hover {
+    color: #000;
+    border: 0;
+  }
+  
+  .btns_app_mr_btm {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .btns_app_mr_btm a {
+    width: 49%;
+  }
+  
+  .btns_app_mr_btm a img {
+    border-radius: 5px;
+  }
+  
+  .btns_app_mr_btm a img:hover {
+    box-shadow: 0 0 4px 1px #ccc;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .btns_app_mr_btm a:hover {
+    margin: 0;
+  }
+  
+  .private_confidential {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .row_secure_items {
+    margin: 15px 0 0;
+  }
+  
+  .row_secure_items h3 {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .row_secure_items h3::after {
+    display: none;
+  }
+  
+  .icon_left_side {
+    background-color: #eee;
+    border-radius: 30%;
+    padding: 12px;
+    width: 50px;
+  }
+  
+  .about_astrotalk_footer {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 2;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #7d7d7d;
+    word-break: break-word;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .topMargin {
+    margin-top: 50px;
+  }
+  
+  .router_link {
+    cursor: pointer;
+  }
+  
+  a.article {
+    font-size: 20px;
+  }
+  
+  span.sm-top {
+    font-size: 10px;
+    font-weight: 600;
+    top: -10px;
+    position: relative;
+    padding: 1px 6px;
+    border-radius: 10px;
+    text-transform: none;
+  }
+  
+  .newftrcolr {
+    color: #f0df20;
+    border: 1px solid #f0df35;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .row_secure_items {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .private_confidential {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-top {
+      padding: 10px 0 10px 0;
+    }
+  
+    .icon_left_side {
+      min-width: 50px;
+    }
+  
+    .about_astrotalk_footer {
+      margin-bottom: 10px !important;
+    }
+  
+    .row_secure_items h3 {
+      margin-left: 10px;
+      text-align: left;
+      font-size: 12px !important;
+    }
+  
+    .footer-top p {
+      font-size: 12px;
+    }
+  
+    .footer-top h3 {
+      font-size: 14px;
+    }
+  
+    .fp {
+      height: 43px;
+    }
+  
+    .heading_link {
+      font-size: 14px;
+    }
+  
+    .footer-top .discript_link {
+      font-size: 12px;
+    }
+  
+    .copy-cntr p {
+      font-size: 12px;
+    }
+  
+    .btns_app_mr_btm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .btns_app_mr_btm a {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+  
+    .footer-links a:hover,
+    .footer-links a:focus,
+    .footer-links p:hover,
+    .footer-links p:focus {
+      color: #fff;
+      margin-left: 0;
+    }
+  }
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+  }
+  
+  .footer-links .social-media {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .facebook {
+    background-color: #4267b2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .instagram {
+    background: linear-gradient(
+      30deg,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5
+    );
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .linkedin {
+    background-color: #0072b1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .youtube {
+    background-color: #ff0000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-social i {
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .footer-links .social-media:hover {
+    margin-left: 0;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .youtube:hover.youtube i {
+    color: #ff0000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .linkedin:hover.linkedin i {
+    color: #0072b1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .instagram:hover.instagram i {
+    color: #d62976;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .facebook:hover.facebook i {
+    color: #4267b2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .fa {
+    padding-right: 0 !important;
+    opacity: 1 !important;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-links .social-media {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+    }
+  
+    .footer-social i {
+      font-size: 18px;
+    }
+  
+    .icon_left_side {
+      min-width: 43px;
+      width: 43px;
+      height: 43px;
+    }
+  
+    .btns_app_mr_btm {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .btns_app_mr_btm a {
+      width: 49%;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Blog Details CSS */
+  
+  .footer-top .fade_class_up {
+    visibility: visible;
+    animation-name: fadeInUp;
+  }
+  
+  .footer-top .fade_class_down {
+    visibility: visible;
+    animation-name: fadeInDown;
+  }
+  
+  .copy-cntr {
+    background: #000;
+    padding: 15px 0;
+  }
+  
+  .copy-cntr p {
+    color: #fff;
+    margin: 0;
+    font-size: 13px;
+  }
+  
+  .footer-top {
+    padding: 20px 0 30px;
+    text-align: left;
+    background-color: #454545;
+  }
+  
+  .footer-top h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ddd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .footer-top h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0df20;
+    height: 2px;
+  }
+  
+  .heading_link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ddd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: auto;
+  }
+  
+  .heading_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94px;
+    background-color: #f0df20;
+    height: 2px;
+  }
+  
+  .footer-top .discript_link {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+    padding-bottom: 5px;
+    word-break: break-word;
+  }
+  
+  .text-link {
+    color: #f0df20 !important;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .footer-links h3 a {
+    padding: 0;
+    border: none;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+  }
+  
+  .footer-social i {
+    margin: 0 5px;
+    color: #eee;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .footer-social i:hover {
+    color: #000;
+    border: 0;
+  }
+  
+  .btns_app_mr_btm {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .btns_app_mr_btm a {
+    width: 49%;
+  }
+  
+  .btns_app_mr_btm a img {
+    border-radius: 5px;
+  }
+  
+  .btns_app_mr_btm a img:hover {
+    box-shadow: 0 0 4px 1px #ccc;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .btns_app_mr_btm a:hover {
+    margin: 0;
+  }
+  
+  .private_confidential {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .row_secure_items {
+    margin: 15px 0 0;
+  }
+  
+  .row_secure_items h3 {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .row_secure_items h3::after {
+    display: none;
+  }
+  
+  .icon_left_side {
+    background-color: #eee;
+    border-radius: 30%;
+    padding: 12px;
+    width: 50px;
+  }
+  
+  .about_astrotalk_footer {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 2;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #7d7d7d;
+    word-break: break-word;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .topMargin {
+    margin-top: 50px;
+  }
+  
+  .router_link {
+    cursor: pointer;
+  }
+  
+  a.article {
+    font-size: 20px;
+  }
+  
+  span.sm-top {
+    font-size: 10px;
+    font-weight: 600;
+    top: -10px;
+    position: relative;
+    padding: 1px 6px;
+    border-radius: 10px;
+    text-transform: none;
+  }
+  
+  .newftrcolr {
+    color: #f0df20;
+    border: 1px solid #f0df35;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .row_secure_items {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .private_confidential {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-top {
+      padding: 10px 0 10px 0;
+    }
+  
+    .icon_left_side {
+      min-width: 50px;
+    }
+  
+    .about_astrotalk_footer {
+      margin-bottom: 10px !important;
+    }
+  
+    .row_secure_items h3 {
+      margin-left: 10px;
+      text-align: left;
+      font-size: 12px !important;
+    }
+  
+    .footer-top p {
+      font-size: 12px;
+    }
+  
+    .footer-top h3 {
+      font-size: 14px;
+    }
+  
+    .fp {
+      height: 43px;
+    }
+  
+    .heading_link {
+      font-size: 14px;
+    }
+  
+    .footer-top .discript_link {
+      font-size: 12px;
+    }
+  
+    .copy-cntr p {
+      font-size: 12px;
+    }
+  
+    .btns_app_mr_btm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .btns_app_mr_btm a {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+  
+    .footer-links a:hover,
+    .footer-links a:focus,
+    .footer-links p:hover,
+    .footer-links p:focus {
+      color: #fff;
+      margin-left: 0;
+    }
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+  }
+  
+  .footer-links .social-media {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .facebook {
+    background-color: #4267b2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .instagram {
+    background: linear-gradient(
+      30deg,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5
+    );
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .linkedin {
+    background-color: #0072b1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .youtube {
+    background-color: #ff0000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-social i {
+    border: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .footer-links .social-media:hover {
+    margin-left: 0;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .youtube:hover.youtube i {
+    color: #ff0000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .linkedin:hover.linkedin i {
+    color: #0072b1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .instagram:hover.instagram i {
+    color: #d62976;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links .facebook:hover.facebook i {
+    color: #4267b2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .fa {
+    padding-right: 0 !important;
+    opacity: 1 !important;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-links .social-media {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+    }
+  
+    .footer-social i {
+      font-size: 18px;
+    }
+  
+    .icon_left_side {
+      min-width: 43px;
+      width: 43px;
+      height: 43px;
+    }
+  
+    .btns_app_mr_btm {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .btns_app_mr_btm a {
+      width: 49%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .free_aries_horoscope_section_add {
+    background-color: #f0df20;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .heading_want_know_aries_virgo_match {
+    text-align: center;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+  
+  .btns_contact_astrologer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .bnt_astrologer_contact {
+    background-color: #fff;
+    border: none;
+    color: #313131;
+    font-size: 16px;
+    box-shadow: 1px 1px 4px #919191;
+    border-radius: 30px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  
+  .bnt_astrologer_contact:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  
+  .bnt_astrologer_contact i {
+    color: #f0df20;
+    font-size: 26px;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .free_aries_horoscope_section_add {
+      padding: 10px;
+      margin: 0;
+      border-radius: 5px;
+      margin-bottom: 18px;
+    }
+  
+    .heading_want_know_aries_virgo_match {
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 0;
+    }
+  
+    .btns_contact_astrologer {
+      width: 100%;
+    }
+  
+    .btns_contact_astrologer a {
+      width: 49%;
+    }
+  
+    .bnt_astrologer_contact {
+      width: 100%;
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .bnt_astrologer_contact i {
+      font-size: 18px;
+      margin-right: 7px;
+    }
+  }
+  .seo_contant a {
+    color: #bbab21 !important;
+    text-decoration: underline;
+  }
+  
+  .pvc-stats-icon {
+    display: none;
+  }
+  
+  .blog_article p a {
+    color: #bbab21 !important;
+    text-decoration: underline;
+  }
+  
+  iframe {
+    border: 0;
+    width: 100%;
+  }
+  
+  .pvc_clear {
+    display: none;
+  }
+  
+  .hdweight {
+    font-weight: 400 !important;
+  }
+  
+  .blog_article p.total_only {
+    display: none !important;
+  }
+  
+  .resent_blog {
+    display: block;
+  }
+  
+  .related_blog {
+    display: block;
+  }

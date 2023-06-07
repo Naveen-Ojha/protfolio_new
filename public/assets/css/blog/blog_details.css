@@ -1,0 +1,825 @@
+.blog_section {
+    padding-top: 78px;
+  }
+  .blog_header {
+    background-color: #f0df20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+  .blog_header h1 {
+    margin: 0;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .list_horoscope_menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .second_list_horoscope_menu {
+    justify-content: space-around;
+  }
+  .list_horoscope_menu li {
+    padding: 7px 40px;
+    transition: ease-in-out all 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 4px #919191;
+    border-radius: 20px;
+  }
+  .list_horoscope_menu li.active {
+    pointer-events: none;
+    background-color: #f0df20;
+  }
+  .list_horoscope_menu li:focus,
+  .list_horoscope_menu li:hover {
+    background-color: #f0df20;
+  }
+  .list_horoscope_menu li a {
+    color: #313131;
+    font-size: 13px;
+  }
+  .list_horoscope_menu li a:focus,
+  .list_horoscope_menu li a:hover {
+    text-decoration: none;
+  }
+  .chat_and_contact_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 40px;
+  }
+  .contact_with_astrologer_btn {
+    border: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #ccc;
+    padding: 13px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease-in-out all 0.3s;
+  }
+  .contact_with_astrologer_btn:focus,
+  .contact_with_astrologer_btn:hover {
+    box-shadow: 0 0 6px #616161;
+  }
+  .contact_with_astrologer_btn i {
+    color: #f0df20;
+    font-size: 26px;
+    margin-right: 10px;
+  }
+  .content_blog_list {
+    background-color: transparent;
+    padding-top: 30px;
+  }
+  .blog_box_content {
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px #919191;
+  }
+  .blog_img_content img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+  .description_blog {
+    padding: 10px 15px 5px;
+    font-size: 17px;
+  }
+  .date_description_blog {
+    padding: 0 15px 10px 15px;
+    text-align: right;
+    font-size: 12px;
+    color: #616161;
+  }
+  @media screen and (max-width: 576px) {
+    .content_blog_list .col-md-9 {
+      padding-right: calc(var(--bs-gutter-x) / 2) !important;
+    }
+    .content_blog_list .col-md-3 {
+      display: none;
+    }
+    .content_blog_list {
+      background-color: transparent;
+      padding-top: 10px;
+    }
+    .subheading_related_blogs::after,
+    .subheading_related_blogs::before {
+      display: none;
+    }
+    .heading_related_blogs {
+      margin-bottom: 10px !important;
+      font-size: 22px !important;
+    }
+    .subheading_related_blogs {
+      font-size: 18px;
+      margin-bottom: 20px !important;
+    }
+    .blog_title_heading {
+      text-align: left !important;
+    }
+    .blog_section {
+      padding-top: 71px;
+    }
+    .blog_subheading_title {
+      text-align: left !important;
+    }
+    .blog_article {
+      padding-top: 15px !important;
+    }
+  }
+  .img_blog_mbl_view img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+  .blog_box_mbl_view {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 2px #919191;
+    margin-bottom: 10px;
+  }
+  .discription_blog_mbl_view {
+    padding: 5px 12px 10px;
+  }
+  .discription_blog_mbl_view h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .name_and_date_blog_mbl_view {
+    text-align: right;
+  }
+  .date_blog_mbl_view,
+  .name_blog_mbl_view {
+    font-size: 12px;
+    color: #616161;
+  }
+  .astrology_blog_heading {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 0 4px #616161;
+    background-color: #fff;
+  }
+  .seo_section {
+    padding: 30px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+  .seo_section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .seo_section h4 {
+    font-size: 16px;
+    color: #616161;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  .seo_section p {
+    font-size: 14px;
+    color: #616161;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .categories_section {
+    margin-bottom: 30px;
+  }
+  .catergories_items .categories_link {
+    font-size: 18px;
+    color: #323232;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .catergories_items .categories_link:focus,
+  .catergories_items .categories_link:hover {
+    font-weight: 500;
+    color: #323232;
+  }
+  .catergories_items .categories_link.active {
+    font-weight: 500;
+    color: #323232;
+    pointer-events: none;
+  }
+  .content_blog_list .col-md-3 {
+    border-left: 1px solid #ccc;
+    padding-left: 30px;
+  }
+  .content_blog_list .col-md-9 {
+    padding-right: 30px;
+  }
+  .search_section_blog {
+    margin: 30px 0;
+  }
+  .blog_search {
+    max-width: 100% !important;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 3px 7px;
+  }
+  .blog_search_btn {
+    background: 0 0;
+    border: none;
+    padding-right: 5px;
+    color: #616161;
+    font-size: 12px;
+  }
+  .blog_search .input_box_blog {
+    width: 80%;
+    border: none;
+    color: #616161;
+    background-color: transparent;
+    font-size: 13px;
+  }
+  .blog_search .input_box_blog:focus {
+    outline: 0;
+  }
+  .main_heading_blog {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .blog_title_heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #323232e6;
+    line-height: 2.1rem;
+  }
+  h2.blog_title_heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #323232;
+    line-height: 1.9rem;
+  }
+  .blog_subheading_title {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .blog_subheading_title span {
+    font-weight: 300;
+  }
+  .blog_article {
+    padding-top: 30px;
+  }
+  .blog_article p {
+    font-size: 18px;
+    margin-bottom: 23px;
+    line-height: 1.6;
+    color: #616161;
+    text-align: justify;
+  }
+  .blog_article ul {
+    font-size: 18px;
+    margin-bottom: 23px;
+    line-height: 1.6;
+    color: #616161;
+  }
+  .blog_article ul li {
+    font-size: 18px;
+    margin-bottom: 23px;
+    line-height: 1.6;
+    color: #616161;
+  }
+  .blog_article p.bold_text_blog {
+    font-weight: 500;
+  }
+  .mercury_section_blog {
+    padding-top: 30px;
+  }
+  .heading_mercury_section {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    color: #000;
+    border-bottom: 2px solid #f0df20;
+  }
+  .mercury_section_blog p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #616161;
+    text-align: justify;
+  }
+  .img_blog_article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .line_with_icon {
+    position: relative;
+  }
+  .icon_astrotalk img {
+    width: 100%;
+  }
+  .icon_astrotalk {
+    position: absolute;
+    bottom: -18px;
+    left: 47%;
+    width: 40px;
+  }
+  p.read_note {
+    font-weight: 500;
+    color: #000;
+  }
+  .landscape_image img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    margin-bottom: 20px;
+    object-position: center;
+    border-radius: 10px;
+  }
+  .img_height_set img {
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+  .heading_related_blogs {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  .subheading_related_blogs {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #313131;
+    position: relative;
+  }
+  .subheading_related_blogs::after,
+  .subheading_related_blogs::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    top: 56%;
+    background-color: #313131;
+  }
+  .subheading_related_blogs::after {
+    right: 250px;
+  }
+  .subheading_related_blogs::before {
+    left: 250px;
+  }
+  .related_blog_box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 4px #919191;
+    margin-bottom: 20px;
+  }
+  .img_related_blog img {
+    border-radius: 15px;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  p.heading_related_blog_box {
+    font-size: 14px;
+    font-weight: 500;
+    color: #313131;
+    text-align: center;
+    margin: 12px 0;
+  }
+  p.parah_realted_blog_box {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #313131;
+  }
+  .readmore_btn {
+    background-color: #f0df20;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: ease-in-out all 0.3s;
+  }
+  .readmore_btn:focus,
+  .readmore_btn:hover {
+    box-shadow: 0 0 4px #919191;
+  }
+  .comment_section_box {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .profile_pic_blog_comment {
+    width: 38%;
+  }
+  .profile_pic_blog_comment img {
+    width: 89px;
+    border-radius: 50%;
+    height: 89px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .name_detail_comment_section {
+    padding-left: 10px;
+  }
+  .full_name_user_comment {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    color: #000;
+  }
+  .active_status_user_comment {
+    font-size: 10px;
+    color: #919191;
+    display: block;
+  }
+  p.discription_user_comment {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #616161;
+    text-align: justify;
+  }
+  .reply_user_comment {
+    font-size: 13px;
+    color: #919191;
+  }
+  .view_all_btn {
+    text-align: right;
+    color: #616161;
+    font-size: 16px;
+  }
+  .view_all_btn i {
+    color: #f0df20;
+    font-size: 18px;
+  }
+  .leave_comment {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  .comment_box_user_leave {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #ccc;
+    margin-bottom: 20px;
+    padding: 50px;
+  }
+  .form_intput_field label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+  }
+  .form_intput_field {
+    margin-bottom: 25px;
+  }
+  .form_intput_field textarea {
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #ccc;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .form_intput_field input {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 40%;
+    background-color: transparent;
+    height: 35px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .submit_btn_leave_comment {
+    background-color: #f0df20;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    transition: ease-in-out all 0.3s;
+  }
+  .form_intput_field textarea:focus {
+    outline: 0;
+  }
+  .form_intput_field input:focus {
+    outline: 0;
+  }
+  .submit_btn_leave_comment:focus,
+  .submit_btn_leave_comment:hover {
+    box-shadow: 0 0 4px #919191;
+  }
+  .email_addres_input_form input {
+    width: 60%;
+  }
+  .side_box_blog_baar {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #919191;
+    margin-bottom: 30px;
+  }
+  .side_box_blog_baar img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .side_box_blog_baar p {
+    padding: 10px 10px 5px;
+    font-size: 16px;
+    color: #212529;
+    margin: 0;
+  }
+  .recently_posted_blogs .trending_link {
+    display: inline-block;
+    color: #616161;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all ease-in-out 0.1s;
+  }
+  .recently_posted_blogs .trending_link:focus,
+  .recently_posted_blogs .trending_link:hover {
+    font-weight: 500;
+  }
+  .heading_top_trending {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #919191;
+    margin-bottom: 20px;
+  }
+  .heading_name_trending {
+    padding-left: 15px;
+  }
+  .icon_img_trending {
+    width: 50px;
+  }
+  .icon_img_trending img {
+    width: 100%;
+  }
+  .heading_name_trending h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #323232;
+    line-height: 1.6rem;
+    margin: 0 0 0.5rem;
+  }
+  .heading_name_trending h6 {
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 400;
+  }
+  .contact_btn_astrologer {
+    background-color: #f0df20;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+  }
+  .contact_btn_astrologer:focus,
+  .contact_btn_astrologer:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  .resent_blog {
+    margin-bottom: 20px;
+  }
+  .filter_compatiable {
+    border: 2px solid #f0df20;
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 20px;
+  }
+  .filter_compatiable h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #313131;
+  }
+  .filter_compatiable p {
+    font-size: 14px;
+    text-align: center;
+    color: #616161;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  .two_filter_compatiable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .your_sign_filter h6 {
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #919191;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .your_sign_filter select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    width: 110px;
+    font-size: 14px;
+    color: #313131;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .submit_btn_compatible {
+    background-color: #f0df20;
+    border: none;
+    margin-top: 30px;
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 25px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    transition: ease-in-out 0.3s;
+  }
+  .submit_btn_compatible:focus,
+  .submit_btn_compatible:hover {
+    box-shadow: 0 0 4px 1px #ccc;
+  }
+  .free_service .icon {
+    height: 110px;
+  }
+  .free_kundli_icon {
+    height: 110px;
+    width: 110px;
+    background-position: 398px 364px;
+  }
+  .icons_saprate_image {
+    background-image: url(https://astrotalk.com/assets/images/icon2.webp);
+    display: inline-block;
+  }
+  .free_service .description {
+    font-size: 0.84rem;
+    text-align: justify;
+    line-height: 1.4rem;
+    opacity: 0.9;
+    height: 91px;
+    margin-top: 5px;
+    color: #616161;
+  }
+  .daily_horoscope_icon {
+    height: 110px;
+    width: 110px;
+    background-position: 394px 506px;
+  }
+  .match_making_icon {
+    height: 110px;
+    width: 110px;
+    background-position: 514px 505px;
+  }
+  h2 strong {
+    font-size: 1.4rem;
+    color: #323232e6;
+  }
+  .ramdomPopup .modal-content {
+    border: 0;
+  }
+  .ramdomPopup .modal-body {
+    padding: 0;
+  }
+  .ramdomPopup .randomPopupBg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 680px;
+    padding: 30px;
+    text-align: center;
+  }
+  .randomPopupBgimg1 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/04/randomPop1.jpg);
+  }
+  .randomPopupBgimg2 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/05/randomPop2.jpg);
+  }
+  .randomPopupBgimg3 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/05/randomPop3.jpg);
+  }
+  .randomPopupBgimg4 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/05/randomPop4.jpg);
+  }
+  .randomPopupBgimg5 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/05/randomPop5.jpg);
+  }
+  .randomPopupBgimg6 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/05/randomPop6.jpg);
+  }
+  .randomPopupBg .astrotalkLogo {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 25px;
+  }
+  .randomPopupBg .astrotalkLogo img {
+    width: 100%;
+  }
+  .randomPopupBg h2 {
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .randomPopupBg h4 {
+    margin-bottom: 25px;
+  }
+  .randomPopupBg .firstChatButton {
+    background-color: #f0df21;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 25px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: ease-in-out all 0.3s;
+  }
+  .randomPopupBg .firstChatButton:hover {
+    background-color: #d2c000;
+  }
+  @media screen and (max-width: 576px) {
+    .ramdomPopup .randomPopupBg {
+      height: 500px;
+      padding: 20px;
+    }
+    .randomPopupBg .astrotalkLogo {
+      width: 125px;
+      margin-bottom: 20px;
+    }
+    .randomPopupBg h2 {
+      font-size: 21px !important;
+    }
+    .randomPopupBg h4 {
+      font-size: 17px;
+    }
+    .randomPopupBg .firstChatButton {
+      font-size: 16px;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 22px;
+    font-weight: 100;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: ease-in-out 0.3s;
+  }
+  .closebtn:hover {
+    opacity: 1;
+  }
+  .randomPopupBgimgh1 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/06/randomPoph1.jpg);
+  }
+  .randomPopupBgimgh2 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/06/randomPoph2.jpg);
+  }
+  .randomPopupBgimgh3 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/06/randomPoph3.jpg);
+  }
+  .randomPopupBgimgh4 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/06/randomPoph4.jpg);
+  }
+  .randomPopupBgimgh5 {
+    background-image: url(https://astrotalk.com/astrology-blog/wp-content/uploads/2022/06/randomPoph5.jpg);
+  }
