@@ -92,7 +92,7 @@ export default function Experince() {
                         <div className="left">
                           <img src={icon08} alt="" />
                           <div className="disc">
-                            <span className="title">Front-End Engineer</span>
+                            <span className="title">Software Engineer</span>
                             <span className="desig">Digidu Technology</span>
                           </div>
                         </div>
