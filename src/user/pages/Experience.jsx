@@ -56,64 +56,58 @@ export default function Experince() {
               {/* skill accordion area start */}
               <div className="accordion-skill-style">
                 <div className="accordion" id="accordionExample">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingOne">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <div className="left">
-                          <img src={icon07} alt="" />
-                          <div className="disc">
-                            <span className="title">Software Engineer</span>
-                            <span className="desig">Appin Technology</span>
-                          </div>
-                        </div>
-                        <div className="right">
-                          <div className="date">2020 - 2021</div>
-                        </div>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      className="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        Company Name - &nbsp;
-                        <Link
-                          target="_blank"
-                          to="http://www.appintechnology.in/"
+                  {response.map((value) => {
+                    const {
+                      designation,
+                      companyName,
+                      startDate,
+                      endDate,
+                      description,
+                      companyUrl,
+                      logo,
+                    } = value;
+                    const accrodian = companyName.split(" ")[0];
+                    return (
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                          <button
+                            className="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#${accrodian}`}
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                            <div className="left">
+                              <img
+                                src={logo}
+                                alt="company logo"
+                                className="imgRounded"
+                              />
+                              <div className="disc">
+                                <span className="title">{designation}</span>
+                                <span className="desig">{companyName}</span>
+                              </div>
+                            </div>
+                            <div className="right">
+                              <div className="date">
+                                {startDate} - {endDate}
+                              </div>
+                            </div>
+                          </button>
+                        </h2>
+                        <div
+                          id={accrodian}
+                          className="accordion-collapse collapse"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
                         >
-                          Appin Technology.
-                        </Link>
-                        <span>
-                          &nbsp; I am working from January 2020 to january 2021
-                          as a Full Time Employee.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingTwo">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        <div className="left">
-                          <img src={icon08} alt="" />
-                          <div className="disc">
-                            <span className="title">Front-End Engineer</span>
-                            <span className="desig">Digidu Technology</span>
+                          <div className="accordion-body">
+                            Company Name - &nbsp;
+                            <Link target="_blank" to={companyUrl}>
+                              {companyName}.
+                            </Link>
+                            <span>&nbsp; {description}</span>
                           </div>
                         </div>
                       </div>
