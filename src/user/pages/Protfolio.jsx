@@ -11,13 +11,10 @@ import brand3 from "../assets/images/brand/03.png";
 import brand4 from "../assets/images/brand/04.png";
 import brand5 from "../assets/images/brand/05.png";
 import brand6 from "../assets/images/brand/06.png";
-import testimonials2 from "../assets/images/testimonials/02.png";
-import testimonials3 from "../assets/images/testimonials/03.png";
-import testimonials4 from "../assets/images/testimonials/04.png";
-import testimonialsquote2 from "../assets/images/testimonials/quote-2.png";
 import counterupicon1 from "../assets/images/counter-up/icon/01.png";
 import logoDesgin_02 from "../assets/images/logo/naveen_02.png";
 import logoDesgin from "../assets/images/logo/naveen.png";
+import Testimonials from "./Testimonials";
 
 function Protfolio() {
   return (
@@ -923,102 +920,7 @@ function Protfolio() {
         </div>
       </div>
 
-      <div className="rts-client-feedback rts-section-gap2">
-        <div className="container">
-          <div className="row">
-            <div className="title-area-home-4 text-center">
-              <span className="pre-title">Testimonials</span>
-              <h2 className="title">Client’s Feedbacks</h2>
-            </div>
-          </div>
-          <div className="row g-5 mt--10">
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-anim">
-              {/* single-testimonials */}
-              <div className="rts-single-testimonials-h3 style-four text-center">
-                <div className="top-area">
-                  <img className="quote" src={testimonialsquote2} alt="Quote" />
-                  <p className="disc">
-                    “Thank you for putting in the extra effort during this busy
-                    time. The client truly appreciates it and your positive
-                    attitude has helped us all stay motivated.”
-                  </p>
-                  <div className="start-area">
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                  </div>
-                </div>
-                <div className="client-profile-area">
-                  <img src={testimonials2} alt="Profile" />
-                  <div className="discription">
-                    <p className="name">Shivam Singh</p>
-                    <span>Software Developer</span>
-                  </div>
-                </div>
-              </div>
-              {/* single-testimonials End */}
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-anim">
-              {/* single-testimonials */}
-              <div className="rts-single-testimonials-h3 style-four text-center">
-                <div className="top-area">
-                  <img className="quote" src={testimonialsquote2} alt="Quote" />
-                  <p className="disc">
-                    “I am pleased with your determination to finish this
-                    project. Your helpful attitude shows you are ready to take
-                    on new challenges and grow with the company.”
-                  </p>
-                  <div className="start-area">
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                  </div>
-                </div>
-                <div className="client-profile-area">
-                  <img src={testimonials3} alt="Profile" />
-                  <div className="discription">
-                    <p className="name">Naveen Ojha</p>
-                    <span>Software Developer</span>
-                  </div>
-                </div>
-              </div>
-              {/* single-testimonials End */}
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-anim">
-              {/* single-testimonials */}
-              <div className="rts-single-testimonials-h3 style-four text-center">
-                <div className="top-area">
-                  <img className="quote" src={testimonialsquote2} alt="Quote" />
-                  <p className="disc">
-                    “Naveen, your work looks great! It is clear that you care
-                    about your work, and I appreciate that you asked the client
-                    about their design before creating their website.”
-                  </p>
-                  <div className="start-area">
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                  </div>
-                </div>
-                <div className="client-profile-area">
-                  <img src={testimonials4} alt="Profile" />
-                  <div className="discription">
-                    <p className="name">Adesh Pal</p>
-                    <span>Software Developer</span>
-                  </div>
-                </div>
-              </div>
-              {/* single-testimonials End */}
-            </div>
-          </div>
-        </div>
-      </div>
+      <Testimonials />
 
       <div className="rts-brand-area rts-section-gap2Bottom">
         <div className="brand-container">

@@ -137,7 +137,7 @@ function Home() {
                   but rather when&nbsp;there is nothing more to take away.
                 </p>
                 <div className="button-banner-wrapper text-anim">
-                  <a href="#" className="rts-btn btn-main-2 mr--20">
+                  <a download="true" href="/" className="rts-btn btn-main-2 mr--20">
                     Download CV
                   </a>
                   <a

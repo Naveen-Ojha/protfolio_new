@@ -22688,3 +22688,8 @@ body.photographer-home.dark-version ul#mobile-menu-active li a {
 .home-four.home-mazin .progress-wrap svg.progress-circle path {
     stroke: #FFAE00;
 }
+.imgRounded {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
