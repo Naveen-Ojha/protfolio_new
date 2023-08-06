@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import shape8 from "../assets/images/banner/shape/08.png";
 import bg01 from "../assets/images/bg/01.png";
-import icon07 from "../assets/images/skill/icon/07.png";
-import icon08 from "../assets/images/skill/icon/08.png";
-import icon09 from "../assets/images/skill/icon/09.png";
 import icon01 from "../assets/images/skill/icon/01.svg";
 import icon02 from "../assets/images/skill/icon/02.svg";
 import icon03 from "../assets/images/skill/icon/03.svg";
