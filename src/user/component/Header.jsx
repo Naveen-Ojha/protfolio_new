@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo/naveen.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { apiEndPoint } from "../../enviroment";
 
 export default function Header() {
+  const [response, setResponse] = useState([]);
+
+  const getCategory = () => {
+    let config = {
+      method: "get",
+      maxBodyLength: Infinity,
+      url: `${apiEndPoint}category`,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    axios
+      .request(config)
+      .then((response) => {
+        setResponse(response.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getCategory();
+  });
+
   return (
     <>
       <header className="header-one header--sticky header-four">
@@ -16,26 +44,14 @@ export default function Header() {
             <div className="col-xl-8 justify-content-center d-flex d-none d-xl-block">
               <nav className="main-nav">
                 <ul id="nav">
-                  <li>
-                    <a href="/#home">Home</a>
-                  </li>
-                  <li className="current">
-                    <a href="/#about">About</a>
-                  </li>
-                  <li>
-                    <a href="/#service">Service</a>
-                  </li>
-                  <li>
-                    <a href="/#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                    <Link target="_blank" to="/blog">
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <a href="/#gettouch">Contacts</a>
-                  </li>
+                  {response.map((category) => {
+                    const { name, url } = category;
+                    return (
+                      <li>
+                        <a href={`/#${url}`}>{name}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </div>

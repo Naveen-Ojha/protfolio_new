@@ -54,7 +54,7 @@ function Contact() {
     <>
       <div
         className="rts-contact-area four rts-section-gap2Bottom"
-        id="gettouch"
+        id="contacts"
       >
         <div className="shape-one">
           <img src={bannershape8} alt="" />

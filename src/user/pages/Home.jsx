@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import bannerImg from "../assets/images/banner/04.png";
 import bannerImg from "../assets/images/profile_img/my_img.png";
 import { Link } from "react-router-dom";
+import { apiEndPoint } from "../../enviroment";
+import axios from "axios";
 
 function Home() {
+  const [response, setResponse] = useState([]);
+
+  const getCategory = () => {
+    let config = {
+      method: "get",
+      maxBodyLength: Infinity,
+      url: `${apiEndPoint}category`,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    axios
+      .request(config)
+      .then((response) => {
+        setResponse(response.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getCategory();
+  });
   return (
     <>
       <div id="side-bar" className="side-bar mazin-home">
@@ -26,7 +53,15 @@ function Home() {
             <div className="body-mobile">
               <nav className="nav-main mainmenu-nav mt--30">
                 <ul className="mainmenu" id="mobile-menu-active">
-                  <li className="one">
+                  {response.map((category) => {
+                    const { name, url } = category;
+                    return (
+                      <li className="one">
+                        <a href={`#${url}`}>{name}</a>
+                      </li>
+                    );
+                  })}
+                  {/* <li className="one">
                     <a href="#home">Home</a>
                   </li>
                   <li className="two">
@@ -43,7 +78,7 @@ function Home() {
                   </li>
                   <li className="six">
                     <a href="#contact">Contact Us</a>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -137,7 +172,11 @@ function Home() {
                   but rather when&nbsp;there is nothing more to take away.
                 </p>
                 <div className="button-banner-wrapper text-anim">
-                  <a download="true" href="/" className="rts-btn btn-main-2 mr--20">
+                  <a
+                    download="true"
+                    href="/"
+                    className="rts-btn btn-main-2 mr--20"
+                  >
                     Download CV
                   </a>
                   <a

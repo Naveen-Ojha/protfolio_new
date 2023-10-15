@@ -9,22 +9,12 @@ import Blog from "./user/pages/Blog";
 import Contact from "./user/pages/Contact";
 import Experience from "./user/pages/Experience";
 import { useLocation } from "react-router-dom";
-import AdminRoutes from './admin/Routes';
-import ThemeProvider from './admin/theme';
-import AdminProvider from './admin/context/AdminContext';
 
 function App() {
   const location = useLocation();
   const route = location.pathname.split("/")[1];
-  if (route === "admin") {
-    return (
-      <ThemeProvider>
-        <AdminProvider>
-          <AdminRoutes />
-        </AdminProvider>
-      </ThemeProvider>
-    );
-  } else if (route === "blog") {
+
+  if (route === "blog") {
     return (
       <div className="onepage background-light designer-home home-mazin home-four">
         <Header />
